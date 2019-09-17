@@ -15,13 +15,13 @@ const consume = (a, b, cb) => cb(a,b);
   * Create a function named greeting that accepts a first and last name and returns 
   * "Hello first-name last-name, nice to meet you!"
 */
-const add = (a, b) => consume(a, b, (x, y) => x + y);
+const add = (x, y) => x + y;
 //console.log(add(5, 6));
 
-const multiply = (a, b) => consume(a, b, (x, y) => x * y);
+const multiply =  (x, y) => x * y;
 //console.log(multiply(5, 6));
 
-const greeting = (a, b) => consume(a, b, (firstName, lastName) => `Hello ${firstName} ${lastName}, nice to meet you!`);
+const greeting = (firstName, lastName) => `Hello ${firstName} ${lastName}, nice to meet you!`;
 //console.log(greeting('Humberto', 'Raya'));
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
